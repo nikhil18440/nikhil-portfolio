@@ -1,0 +1,60 @@
+.Hero{
+    width: 100%;
+    height: calc(100vh - 30px);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.Heroleft{
+    flex: 2;
+    display: flex;
+    align-items: start;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+
+.HeroRight{
+    font-size: 12px;
+    padding: 0px 0px 20px 30px;
+}
+
+.HeroRightImg{
+    width: calc(100% - 20px);
+    object-fit: cover;
+    /* filter: grayscale(1); */
+    border-radius: 10px;
+}
+
+.HeroLeft1{
+    text-transform: capitalize;
+    padding-left: 10px;
+    margin: 0px ;
+    font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.HeroLeft2{
+    font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15rem;
+  /* height: 100px;
+  width: 200px; */
+  padding: 0px;
+    margin: 0px;
+    /* background-color: red; */
+    letter-spacing: 0;
+  line-height: 0.8;
+  word-spacing: normal;
+  overflow: hidden;
+}
+
+.HeroLeft3{
+    font-size: 12px;
+    padding-left: 10px;
+    overflow: hidden;
+}

@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.mainLeft{
+    flex: 2;
+}
+
+.mainRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.HeroRightImg{
+    width: 100%;
+}
