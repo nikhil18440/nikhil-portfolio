@@ -71,9 +71,9 @@ function Hero() {
           <div className="HeroLeft3" ref={textRef2}>MODERN . MINIMAL . WEB DEVELOPER.</div>
 
         </div>
-        <span className="HeroRight">
+        {/* <span className="HeroRight">
           Scroll to know me more
-        </span>
+        </span> */}
         
     </div>
     </>
