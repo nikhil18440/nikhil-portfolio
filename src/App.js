@@ -6,6 +6,7 @@ import Main from './componants/Main/Main';
 import Works from './componants/Works/Works';
 import HorizontalScroll from './componants/HoriScroll/HoriScroll';
 import AutoScroller from './componants/AutoScroller/AutoScroller';
+import Contact from './componants/Contact/Contact';
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
       <Main/>
       {/* <HorizontalScroll/> */}
       <Works/>
-      <AutoScroller/>
+      {/* <AutoScroller/> */}
+      <Contact/>
 
     </div>
   );

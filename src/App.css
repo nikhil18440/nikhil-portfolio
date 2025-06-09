@@ -1,4 +1,5 @@
 .App{
     background-color: #eaeae4;
     width: calc(100vw - 8px);
+    overflow-x: hidden;
 }
