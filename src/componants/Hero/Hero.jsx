@@ -11,6 +11,7 @@ function Hero() {
   const textRef1 = useRef(null);
   const textRef2 = useRef(null);
   const imgref = useRef(null);
+  const btnRef = useRef(null);
 
   useEffect(() => {
     if (textRef3.current) {
@@ -71,11 +72,12 @@ function Hero() {
           <div className="HeroLeft3" ref={textRef2}>MODERN . MINIMAL . WEB DEVELOPER.</div>
 
         </div>
-        {/* <span className="HeroRight">
-          Scroll to know me more
-        </span> */}
-        
+        <button className="HeroRight" ref={btnRef}>
+          SEE MY WORKS
+        </button>
+              
     </div>
+  
     </>
   )
 }

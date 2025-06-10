@@ -16,10 +16,41 @@
     margin: 0px;
 }
 
-.HeroRight{
+
+
+.HeroRight {
+    background-color: var(--main-colour3);
+    color: var(--main-colour1);
+    /* border-radius: 10em; */
     font-size: 12px;
-    padding: 0px 0px 20px 30px;
-}
+    font-weight: 600;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 2rem;
+    /* padding: 1em 2em; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--main-colour2);
+    box-shadow: 0 0 0 0 var(--main-colour2);
+    /* margin: 0rem 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+    margin-bottom: 4rem;
+    /* margin-bottom: 30px; */
+    /* margin: auto; */
+  }
+  
+  .HeroRight:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 var(--main-colour2);
+  };
+  
+  .HeroRight:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 var(--main-colour4);
+  };
 
 .HeroRightImg{
     width: calc(100% - 20px);
