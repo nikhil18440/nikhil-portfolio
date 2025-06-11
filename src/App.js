@@ -7,15 +7,23 @@ import Works from './componants/Works/Works';
 import HorizontalScroll from './componants/HoriScroll/HoriScroll';
 import AutoScroller from './componants/AutoScroller/AutoScroller';
 import Contact from './componants/Contact/Contact';
+import AboutMe from './componants/AboutMe/AboutMe';
+import { useEffect } from 'react';
+import HighlightWords from './componants/AboutMe/Aboutme2';
 
 function App() {
 
   
+  
+
   return (
     <div className="App">
       
-    
+      <Navbar/>
       <Main/>
+      {/* <AboutMe/> */}
+      <HighlightWords/>
+
       {/* <HorizontalScroll/> */}
       <Works/>
       {/* <AutoScroller/> */}

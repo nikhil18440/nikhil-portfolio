@@ -15,6 +15,8 @@ function Works() {
 
     const [amountToScroll, setAmountToScroll] = useState(0)
 
+    const [hoveredId, setHoveredId] = useState(null);
+
     useEffect(() => {
         if (sliderRef.current) {
             setSliderWidth(sliderRef.current.offsetWidth)
@@ -27,7 +29,7 @@ function Works() {
         gsap.fromTo(headRef.current,
             
             {
-                fontSize: '23rem',
+                fontSize: '25rem',
             },
             {
             // width: '1rem',
@@ -44,6 +46,26 @@ function Works() {
 
     }, [])
 
+
+    const GifItems = [
+    {
+        id: 1,
+        staticImg: "man.jpg",
+        gifImg: "sampleGif.gif",
+    },
+    {
+        id: 2,
+        staticImg: "man.jpg",
+        gifImg: "sampleGif.gif",
+    },
+    {
+        id: 3,
+        staticImg: "man.jpg",
+        gifImg: "sampleGif.gif",
+    },
+    ];
+
+
     return (
         <div className='Works' ref={mainRef}>
             <div className="Worksheading" ref={headRef}>WEB APPS</div>
@@ -51,7 +73,10 @@ function Works() {
             <div className="sliderListWrapper" ref={wrapref}>
                 <div className="sliderList" ref={sliderRef}>
 
-                    <div className="item">
+                    {
+                        GifItems.map((item) => (
+                    <div className="item" key={item.id} onMouseEnter={() => setHoveredId(item.id)}
+          onMouseLeave={() => setHoveredId(0)}>
                         <div className="ItemLeft">
                             <div className="ItemLeftTop">
                                 <div className="itemTitle">jsjfhdhf</div>
@@ -61,44 +86,14 @@ function Works() {
                                 knsdfndnf
                             </div>
                         </div>
-                        <img className='itemImg' src="man.jpg" alt="" />
+                        <img className='itemImg' src={hoveredId === item.id ? item.gifImg : item.staticImg  } alt="" />
+                        {console.log(item.id, hoveredId)}
                     </div>
-                    <div className="item">
-                        <div className="ItemLeft">
-                            <div className="ItemLeftTop">
-                                <div className="itemTitle">jsjfhdhf</div>
-                                <div className="itemDesc">lorem idskj sjdfjgf</div>
-                            </div>
-                            <div className="ItemLeftBottom">
-                                knsdfndnf
-                            </div>
-                        </div>
-                        <img className='itemImg' src="man.jpg" alt="" />
-                    </div>
-                    <div className="item">
-                        <div className="ItemLeft">
-                            <div className="ItemLeftTop">
-                                <div className="itemTitle">jsjfhdhf</div>
-                                <div className="itemDesc">lorem idskj sjdfjgf</div>
-                            </div>
-                            <div className="ItemLeftBottom">
-                                knsdfndnf
-                            </div>
-                        </div>
-                        <img className='itemImg' src="man.jpg" alt="" />
-                    </div>
-                    <div className="item">
-                        <div className="ItemLeft">
-                            <div className="ItemLeftTop">
-                                <div className="itemTitle">jsjfhdhf</div>
-                                <div className="itemDesc">lorem idskj sjdfjgf</div>
-                            </div>
-                            <div className="ItemLeftBottom">
-                                knsdfndnf
-                            </div>
-                        </div>
-                        <img className='itemImg' src="man.jpg" alt="" />
-                    </div>
+                        ))
+                    }
+
+                    
+                    
                     
 
                     

@@ -17,12 +17,12 @@ function Contact() {
         y: 300,
         ease: "power2.out",
         scrollTrigger: {
-          trigger: navRef.current,
+          trigger: textRef1.current,
           start: "top 80%",
           end: "bottom center",
           // markers: true
         },
-        delay: 0.2,
+        // delay: 0.2,
         stagger: 0.05,           // optional stagger for nice effect
         // opacity: 0               // you can also add opacity animation
       });

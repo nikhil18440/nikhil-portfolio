@@ -42,12 +42,10 @@ function Navbar() {
 
   return (
     <div className='Navbar' ref={navRef}>
-      <div className="left" ref={textRef1}>{general.name}</div>
-      <div className="right" ref={textRef2}>
-        <button className="navBtns navBtn1">SKILLS</button>
-        <button className="navBtns navBtn2">PROJECTS</button>
-        <button className="navBtns navBtn2">ACHIEVEMENTS</button>
-        <button className="navBtns navBtn2">RESUME</button>
+      <div className="leftNav" ref={textRef1}>{general.name}</div>
+      <div className="rightNav" ref={textRef2}>
+        <button className="navBtns navBtn1">WORKS</button>
+        <button className="navBtns navBtn2">TESTIMONIALS</button>
         <button className="navBtns navBtn3">CONTACT</button>
       </div>
       <div className="mid"></div>

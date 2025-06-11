@@ -57,6 +57,19 @@ function Hero() {
       
     }
 
+
+    if (btnRef.current) {
+
+      gsap.to(btnRef.current, {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power3.out"
+      });
+
+      
+    }
+
      
       
     
@@ -67,14 +80,17 @@ function Hero() {
     
     <div className='Hero'>
         <div className="Heroleft">
-          <div className="HeroLeft1" ref={textRef1}>HELLO, I'M</div>
+          {/* <div className="HeroLeft1" ref={textRef1}>HELLO, I'M</div> */}
           <div className="HeroLeft2" ref={textRef3}>{general.name}</div>
-          <div className="HeroLeft3" ref={textRef2}>MODERN . MINIMAL . WEB DEVELOPER.</div>
+          {/* <div className="HeroLeft3" ref={textRef2}>MODERN . MINIMAL . WEB DEVELOPER.</div> */}
+          <img src="profilepic2.jpg" ref={imgref} alt="" className="HeroRightImg2" />
 
         </div>
-        <button className="HeroRight" ref={btnRef}>
-          SEE MY WORKS
-        </button>
+        {/* <span className='heroRightDiv'>
+          <button className="HeroRight" ref={btnRef}>
+            SEE MY WORKS
+          </button>
+        </span> */}
               
     </div>
   

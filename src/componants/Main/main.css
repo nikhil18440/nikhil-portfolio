@@ -2,21 +2,34 @@
     display: flex;
     width: 100%;
     overflow-x: hidden;
+    /* position: relative; */
 }
 
 .mainLeft{
-    flex: 2;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .mainRight{
-    flex: 1;
+    flex: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+
+    /* transform: translateX(-50%); */
 }
 
 .HeroRightImg{
     width: 100%;
+    border-radius: 20px;
+        position: absolute;
+    top: 2rem;
+    left: 50%;
+    right: 50%;
+    z-index: 999;
 }

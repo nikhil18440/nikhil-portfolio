@@ -2,7 +2,7 @@
     width: calc(100vw - 8px);
     /* background-color: red; */
     /* overflow: hidden; */
-    padding-bottom: 30px;
+    padding: 10rem 0;
     overflow-x: hidden;
 }
 
@@ -34,7 +34,8 @@
 }
 
 .item:hover{
-  background-color: var(--main-colour2);
+  /* background-color: var(--main-colour1); */
+  background-color: #ccccbf;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
