@@ -26,12 +26,12 @@ function Main() {
     <div className='main'>
 
         <div className="mainLeft">
-            
+            <Navbar/>
             <Hero/>
         </div>
 
         <div className="mainRight">
-          {/* <img src="profilepic3.jpg" ref={imgref} alt="" className="HeroRightImg" /> */}
+          <img src="profilepic3.jpg" ref={imgref} alt="" className="HeroRightImg" />
         </div>
 
     </div>

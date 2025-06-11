@@ -14,6 +14,7 @@ code {
 
 :root{
   --main-colour1: #eaeae4;
-  --main-colour2: #65743A;
+  --main-colour2: #828282;
   --main-colour3: black;
+  --main-colour4: rgb(167, 167, 167);
 }

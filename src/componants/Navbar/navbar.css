@@ -1,13 +1,13 @@
 .Navbar{
     /* width: calc(100vw - 50px); */
     height: 10px;
-    padding-top: 20px;
+    padding-top: 2rem;
     /* background-color: red; */
     font-size: 12px;
     color: var(--main-colour3);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     font-family: "Staatliches", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -20,21 +20,72 @@
     flex: 1;
     overflow: hidden;
     text-transform: capitalize;
-    color: gray;
+    color: var(--main-colour4);
+    font-size: 12px;
 }
 
 .rightNav{
     padding-right: 30px;
     flex: 1.5;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
+    flex-direction: column;
 }
 
 .navBtns{
     background-color: transparent;
     border: none;
-    color: var(--main-colour3);
-    font-size: 12px;
+    color: var(--main-colour4);
+    font-size: 16px;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease; /* smooth transition */
+    font-family: "Staatliches", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navBtns:hover{
+    color: var(--main-colour3);
+    transform: translateY(-2px); /* slight lift effect */
+}
+
+
+.leftNavBtn{
+    border: none;
+    background-color: transparent;
+    color: var(--main-colour2);
+    padding: 5px 10px;
+    cursor: pointer;
+    /* border: 1px solid var(--main-colour2); */
+    font-size: 12px;
+}
+
+.leftNavBtn:hover{
+    background-color: var(--main-colour2);
+    color: var(--main-colour1);
+    transform: translateY(-2px); /* slight lift effect */
+}
+
+
+
+.leftNavBtn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--main-colour3);
+  z-index: -1;
+  transition: height 0.4s ease;
+}
+
+.leftNavBtn:hover::before {
+  height: 100%;
+}
+
+.leftNavBtn:hover {
+  color: var(--main-colour1);
 }

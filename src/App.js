@@ -10,6 +10,7 @@ import Contact from './componants/Contact/Contact';
 import AboutMe from './componants/AboutMe/AboutMe';
 import { useEffect } from 'react';
 import HighlightWords from './componants/AboutMe/Aboutme2';
+import Hero2 from './componants/Hero/Hero2';
 
 function App() {
 
@@ -19,8 +20,9 @@ function App() {
   return (
     <div className="App">
       
-      <Navbar/>
-      <Main/>
+      <Hero2/>
+      {/* <Navbar/> */}
+      {/* <Main/> */}
       {/* <AboutMe/> */}
       <HighlightWords/>
 

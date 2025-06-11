@@ -83,14 +83,14 @@ function Hero() {
           {/* <div className="HeroLeft1" ref={textRef1}>HELLO, I'M</div> */}
           <div className="HeroLeft2" ref={textRef3}>{general.name}</div>
           {/* <div className="HeroLeft3" ref={textRef2}>MODERN . MINIMAL . WEB DEVELOPER.</div> */}
-          <img src="profilepic2.jpg" ref={imgref} alt="" className="HeroRightImg2" />
+          {/* <img src="profilepic2.jpg" ref={imgref} alt="" className="HeroRightImg2" /> */}
 
         </div>
-        {/* <span className='heroRightDiv'>
+        <span className='heroRightDiv'>
           <button className="HeroRight" ref={btnRef}>
             SEE MY WORKS
           </button>
-        </span> */}
+        </span>
               
     </div>
   

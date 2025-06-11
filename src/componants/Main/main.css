@@ -6,7 +6,7 @@
 }
 
 .mainLeft{
-    flex: 1;
+    flex: 1.6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
 }
 
 .mainRight{
-    flex: 0;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,9 +27,9 @@
 .HeroRightImg{
     width: 100%;
     border-radius: 20px;
-        position: absolute;
+        /* position: absolute;
     top: 2rem;
     left: 50%;
     right: 50%;
-    z-index: 999;
+    z-index: 999; */
 }
