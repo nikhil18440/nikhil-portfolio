@@ -10,6 +10,7 @@ function Navbar() {
   const textRef1 = useRef()
   const textRef2 = useRef()
   
+  const btnRef = useRef()
 
   const navRef = useRef()
 
@@ -36,6 +37,15 @@ function Navbar() {
         delay: 0.2
       });
 
+      gsap.fromTo(btnRef.current, {
+        duration: 1,
+        // opacity: 0,
+        y:-100,
+        ease: "power2.out",
+        delay: 0.4
+      }, {
+        y: 0
+      });
       
 
   }, []);
@@ -43,8 +53,8 @@ function Navbar() {
   return (
     <div className='Navbar' ref={navRef}>
       
-      <div className="leftNav" >
-        <button className='leftNavBtn' ref={textRef1}>LET'S WORK</button>
+      <div className="leftNav" ref={btnRef}>
+        <button className='btn' ref={textRef1}>LET'S WORK</button>
       </div>
       <div className="rightNav" ref={textRef2}>
         <button className="navBtns navBtn1">WORKS</button>
